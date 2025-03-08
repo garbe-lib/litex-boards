@@ -114,7 +114,7 @@ def get_application_file(builder: Builder):
 def main():
     from litex.build.parser import LiteXArgumentParser
     parser = LiteXArgumentParser(platform=trenz_cr00103_03_A.Platform,
-                                 description="LiteX SoC on CertusPro-NX VVML EVN Board.")
+                                 description="LiteX SoC on CR00103-03-A bpard.")
     parser.add_target_argument("--sys-clk-freq", default=50e6, type=float,  help="System clock frequency.")
     parser.add_target_argument("--flash",        action="store_true",       help="Flash bitstream and BIOS to SPI Flash.")
     parser.add_target_argument("--upload",       action=None, type=str,     help="Flash application to SPI Flash.")
